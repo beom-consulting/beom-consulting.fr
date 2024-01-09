@@ -1,0 +1,19 @@
+:root {
+  --ocher-100: #f5ebe0;
+  --ocher-300: #e5ccb2;
+  --ocher-500: #cc9966;
+
+  --petrol-blue-50: #d2d7dc;
+  --petrol-blue-100: #b5bcc4;
+  --petrol-blue-300: #909ba7;
+  --petrol-blue-400: #6a798a;
+  --petrol-blue-500: #20364f;
+
+  --honey: #e8ae38;
+  --orange: #d16100;
+  --garnet: #a63e2b;
+  --forest: #026962;
+  --eggplant: #8b2d71;
+
+  --shadow: 1px 1px 1px 0px #00000040;
+}
