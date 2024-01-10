@@ -1,54 +1,54 @@
 h1 {
-  font-family: "Ubuntu";
+  font-family: "Ubuntu Bold";
+  font-weight: 700;
+  font-size: 2.75rem;
+}
+
+h2 {
+  font-family: "Ubuntu Bold";
   font-weight: 700;
   font-size: 2.5rem;
 }
 
-h2 {
-  font-family: "Ubuntu";
-  font-weight: 700;
-  font-size: 2.25rem;
-}
-
 h3 {
-  font-family: "Ubuntu";
+  font-family: "Ubuntu Bold";
   font-weight: 700;
   font-size: 2rem;
 }
 
 h4 {
-  font-family: "Ubuntu";
+  font-family: "Ubuntu Medium";
   font-weight: 500;
   font-size: 1.75rem;
-  letter-spacing: 15%;
+  letter-spacing: 0.15rem;
 }
 
 h5 {
-  font-family: "Ubuntu";
+  font-family: "Ubuntu Bold";
   font-weight: 700;
   font-size: 1.5rem;
 }
 
 .large-body {
-  font-family: "Ubuntu";
+  font-family: "Ubuntu Light";
   font-weight: 300;
   font-size: 1.75rem;
 }
 
 .body {
-  font-family: "Ubuntu";
+  font-family: "Ubuntu Light";
   font-weight: 300;
   font-size: 1.375rem;
 }
 
 .body-accent {
-  font-family: "Ubuntu Bold";
+  font-family: "Ubuntu Medium";
   font-weight: 500;
   font-size: 1.375rem;
 }
 
 .small-body {
-  font-family: "Ubuntu";
+  font-family: "Ubuntu Regular";
   font-weight: 400;
   font-size: 1.125rem;
 }
@@ -56,4 +56,13 @@ h5 {
 .button {
   font-weight: 700;
   font-size: 1.5rem;
+}
+
+section {
+  padding-inline: 1rem;
+}
+
+section > h4 {
+  color: var(--ocher-500);
+  text-align: center;
 }

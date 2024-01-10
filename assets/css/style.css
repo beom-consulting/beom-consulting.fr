@@ -1,12 +1,20 @@
+header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 100;
+}
+
 .navbar {
-  display: flex;
   align-items: center;
+  display: flex;
   justify-content: space-between;
 }
 
 .navbar__links {
-  display: flex;
   align-items: center;
+  display: flex;
   flex-direction: row;
   gap: 4rem;
 }
@@ -30,4 +38,124 @@
 .navbar img {
   width: 143px;
   height: 48px;
+}
+
+.home {
+  align-items: center;
+  background-image: url("../img/home.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  height: 750px;
+  justify-content: center;
+}
+
+.home__text {
+  font-family: "Philosopher";
+  color: var(--ocher-100);
+  max-width: 1076px;
+  text-align: center;
+}
+
+.home__text span {
+  color: var(--ocher-500);
+}
+
+.vision {
+  background-color: var(--ocher-100);
+  position: relative;
+  padding-block: 12rem 20rem;
+}
+
+.vision__icon {
+  position: absolute;
+  top: -60px;
+  left: 0;
+  right: 0;
+  margin-inline: auto;
+}
+
+.vision__text {
+  align-items: center;
+  color: var(--petrol-blue-500);
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  margin: 0 auto;
+  max-width: 1082px;
+  padding-top: 4rem;
+  text-align: center;
+}
+
+.vision__text h2 {
+  font-family: "Philosopher";
+}
+
+.vision__frame {
+  position: relative;
+  width: fit-content;
+  margin-inline: auto;
+  padding-top: 10rem;
+}
+
+.vision__frame__back {
+  background-image: url("../img/vision.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: auto;
+  height: 527px;
+  padding: 2px;
+  width: 535px;
+  position: relative;
+}
+
+.vision__frame__back h1 {
+  background-color: var(--petrol-blue-500);
+  color: var(--ocher-500);
+  font-family: "Philosopher";
+  height: 100%;
+  opacity: 0.85;
+  padding: 2rem;
+  position: relative;
+  width: 100%;
+}
+
+.vision__frame__back__hatch {
+  position: absolute;
+  left: -37px;
+  bottom: -30px;
+  width: 73px;
+  height: 60px;
+}
+
+.vision__frame__back__chevron {
+  position: absolute;
+  top: -20px;
+  left: -20px;
+}
+
+.vision__frame__front {
+  background-color: var(--ocher-500);
+  bottom: -115px;
+  color: var(--petrol-blue-500);
+  height: 284px;
+  position: absolute;
+  right: -115px;
+  width: 305px;
+}
+
+.vision__frame__front h4 {
+  font-family: "Ubuntu";
+  padding: 2rem 1rem;
+}
+
+.vision__frame__front__chevron {
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+}
+
+.missions {
+  background-color: var(--petrol-blue-500);
 }
