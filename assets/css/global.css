@@ -58,11 +58,13 @@ h5 {
   font-size: 1.5rem;
 }
 
-section {
+.container {
+  max-width: 1092px;
+  margin: 0 auto;
   padding-inline: 1rem;
 }
 
-section > h4 {
+.container > h4 {
   color: var(--ocher-500);
   text-align: center;
 }

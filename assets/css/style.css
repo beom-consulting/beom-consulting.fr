@@ -4,6 +4,7 @@ header {
   top: 0;
   right: 0;
   z-index: 100;
+  padding: 1rem;
 }
 
 .navbar {
@@ -41,24 +42,30 @@ header {
 }
 
 .home {
-  align-items: center;
-  background-image: url("../img/home.png");
+  background-image: url("../img/home-bg.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  display: flex;
   height: 750px;
-  justify-content: center;
 }
 
-.home__text {
+.home__container {
+  align-items: center;
+  background-color: var(--petrol-blue-500);
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  opacity: 0.85;
+}
+
+.home__container__text {
   font-family: "Philosopher";
   color: var(--ocher-100);
   max-width: 1076px;
   text-align: center;
 }
 
-.home__text span {
+.home__container__text > span {
   color: var(--ocher-500);
 }
 
@@ -82,8 +89,6 @@ header {
   display: flex;
   flex-direction: column;
   gap: 2.5rem;
-  margin: 0 auto;
-  max-width: 1082px;
   padding-top: 4rem;
   text-align: center;
 }
@@ -95,12 +100,12 @@ header {
 .vision__frame {
   position: relative;
   width: fit-content;
-  margin-inline: auto;
   padding-top: 10rem;
+  margin-inline: auto;
 }
 
 .vision__frame__back {
-  background-image: url("../img/vision.png");
+  background-image: url("../img/vision-bg.png");
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: auto;
@@ -156,6 +161,166 @@ header {
   right: -20px;
 }
 
-.missions {
+.mission {
   background-color: var(--petrol-blue-500);
+  padding-block: 4rem;
+}
+
+.mission__grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 2rem;
+  column-gap: 1rem;
+  padding-block: 4rem;
+}
+
+.mission__grid__item {
+  display: flex;
+  flex-direction: column;
+  gap: 1.375rem;
+  align-items: center;
+  width: 340px;
+  text-align: center;
+  font-size: "Ubuntu";
+}
+
+.mission__grid__item:last-child {
+  width: 310px;
+}
+
+.mission__grid__item__title {
+  color: var(--ocher-300);
+}
+
+.mission__grid__item__text {
+  color: var(--ocher-100);
+}
+
+.mission__use-cases {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.mission__use-cases__img {
+  width: 26px;
+  height: 27px;
+}
+
+.mission__use-cases__title {
+  font-family: "Philosopher";
+  color: var(--ocher-300);
+}
+
+.adn {
+  background-color: var(--ocher-100);
+  padding-block: 4rem;
+}
+
+.adn__container {
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+  padding-top: 2rem;
+}
+
+.adn__container__item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  align-items: center;
+  text-align: center;
+}
+
+.adn__container__item__title {
+  font-family: "Philosopher";
+  color: var(--petrol-blue-500);
+}
+
+.adn__container__item__text {
+  font-family: "Ubuntu";
+  color: var(--petrol-blue-500);
+}
+
+.ecosystem {
+  background-image: url("../img/ecosystem-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 800px;
+}
+
+.ecosystem__container {
+  align-items: center;
+  background-color: var(--petrol-blue-500);
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  opacity: 0.85;
+  text-align: center;
+}
+
+.ecosystem__container__text {
+  color: var(--ocher-100);
+  padding-block: 4rem 6rem;
+}
+
+.ecosystem__grid__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: "Ubuntu";
+  gap: 0.75rem;
+  color: var(--ocher-100);
+}
+
+.ecosystem__grid__item span {
+  width: 40px;
+  height: 8px;
+  border-radius: 8px;
+  background-color: red;
+}
+
+.footer {
+  background-color: var(--ocher-100);
+}
+
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  gap: 6.5rem;
+  align-items: center;
+  padding-block: 4rem;
+}
+
+.footer__container__contact {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+  text-align: center;
+}
+
+.footer__container__contact h4 {
+  color: var(--ocher-500);
+  padding-bottom: 0.75rem;
+}
+
+.footer__container__contact h2 {
+  color: var(--petrol-blue-500);
+  font-family: "Philosopher";
+}
+
+.footer__container__contact img:last-child {
+  transform: rotateZ(180deg);
+}
+
+.footer__container__position {
+  align-items: center;
+  color: var(--petrol-blue-500);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
 }
