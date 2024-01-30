@@ -1,0 +1,545 @@
+header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  backdrop-filter: blur(8px);
+}
+
+.header--active {
+  background-color: var(--petrol-blue-500);
+  backdrop-filter: unset;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.navbar {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  gap: 2.5rem;
+}
+
+.navbar__links {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  color: var(--ocher-500);
+}
+
+.navbar__links li {
+  flex: 1;
+  text-align: center;
+}
+
+.navbar__links a {
+  font-family: "Ubuntu";
+  font-size: 1.375rem;
+  font-weight: 400;
+  line-height: 2.0625rem;
+  letter-spacing: 0.1em;
+}
+
+.navbar__links a:hover {
+  font-family: "Ubuntu Medium";
+}
+
+.navbar-contact {
+  background-color: transparent;
+  box-shadow: var(--shadow);
+  border: 2px solid var(--ocher-500);
+  font-family: "Philosopher";
+  color: var(--ocher-500);
+  padding: 8px 16px 8px 16px;
+}
+
+.navbar-contact:hover {
+  background-color: var(--ocher-500);
+  color: var(--ocher-100);
+}
+
+.navbar-icon {
+  width: 191px;
+  height: 64px;
+}
+
+.navbar-burger {
+  display: none;
+  padding: 0.25rem;
+  background-color: var(--ocher-500);
+}
+
+.navbar-burger--active {
+  background-color: inherit;
+}
+
+.mobile-navbar {
+  display: none;
+  height: 100vh;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4rem;
+  padding: 2rem 3.75rem;
+}
+
+.mobile-navbar--active {
+  display: flex;
+}
+
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 0.5rem 1.5rem 0.5rem 1rem;
+  }
+
+  .navbar > .navbar__links {
+    display: none;
+  }
+
+  .navbar > .navbar-contact {
+    display: none;
+  }
+
+  .navbar-burger {
+    display: block;
+  }
+
+  .navbar__links {
+    flex-direction: column;
+    flex-grow: 0;
+    gap: 1.5rem;
+    align-items: flex-start;
+  }
+
+  .navbar__links a {
+    font-weight: 500;
+    font-size: 1.75rem;
+    letter-spacing: 0.2625rem;
+    font-family: "Ubuntu Light";
+  }
+}
+
+.home {
+  background-image: url("../img/home-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.home__container {
+  background-color: var(--petrol-blue-opacity-80);
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  min-height: calc(100vh - var(--home-icon-size));
+}
+
+.home__container__text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  align-items: center;
+  text-align: center;
+  padding-block: 8rem;
+}
+
+.home__container__text h1 {
+  font-family: "Philosopher";
+  color: var(--ocher-100);
+}
+
+.home__container__text span {
+  color: var(--ocher-500);
+}
+
+.home__container__text p {
+  color: var(--ocher-100);
+  text-shadow: var(--text-shadow);
+}
+
+.vision {
+  background-color: var(--ocher-100);
+  position: relative;
+  padding-block: 6rem;
+}
+
+.vision-icon {
+  position: absolute;
+  top: calc(-1 * var(--home-icon-size));
+  left: 0;
+  right: 0;
+  margin-inline: auto;
+  width: calc(var(--home-icon-size) * 2);
+}
+
+.vision__container {
+  display: flex;
+  flex-direction: row;
+  flex-direction: row;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.vision__text {
+  flex: 1;
+}
+
+.vision__text h3 {
+  text-align: start;
+}
+
+.vision__text h4 {
+  font-family: "Philosopher";
+  padding-bottom: 4rem;
+  color: var(--petrol-blue-500);
+}
+
+.vision__text p {
+  color: var(--petrol-blue-500);
+}
+
+.vision__frame {
+  position: relative;
+  width: 590px;
+  height: 635px;
+  padding-top: 25px;
+  padding-left: 25px;
+  margin: 0 auto;
+}
+
+.vision__frame__back {
+  background-image: url("../img/vision-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 450px;
+  padding: 2px;
+  width: 450px;
+  position: relative;
+}
+
+/*chevron*/
+.vision__frame__back img:nth-child(1) {
+  position: absolute;
+  top: -25px;
+  left: -25px;
+}
+
+/*griffe*/
+.vision__frame__back img:nth-child(3) {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translate(-50%, 50%);
+  width: 73px;
+  height: 60px;
+}
+
+.vision__frame__back h2 {
+  background-color: var(--petrol-blue-opacity-80);
+  color: var(--ocher-500);
+  text-shadow: var(--text-shadow);
+  font-family: "Philosopher";
+  height: 100%;
+  padding: 1.25rem;
+  position: relative;
+  width: 100%;
+}
+
+.vision__frame__front {
+  background-color: var(--ocher-500);
+  bottom: 0;
+  color: var(--petrol-blue-500);
+  height: 243px;
+  position: absolute;
+  right: 0;
+  transform: translate(40%, 60%);
+  width: 257px;
+  padding: 1.5rem;
+}
+
+.vision__frame__front h4 {
+  font-family: "Ubuntu";
+}
+
+.vision__frame__front img {
+  position: absolute;
+  bottom: -25px;
+  right: -25px;
+}
+
+.vision__text img {
+  flex: 1;
+}
+
+@media (max-width: 640px) {
+  .vision__text {
+    text-align: center;
+  }
+
+  .vision__text h3 {
+    text-align: center;
+  }
+
+  .vision__frame {
+    width: 370px;
+    height: 535px;
+    padding-top: 25px;
+    padding-right: 25px;
+    padding-left: 15px;
+  }
+
+  .vision__frame__back {
+    height: 300px;
+    width: 300px;
+  }
+
+  .vision__frame__back h2 {
+    padding: 1rem;
+    font-size: 1.75rem;
+    line-height: 2rem;
+  }
+
+  .vision__frame__back img:nth-child(1) {
+    position: absolute;
+    top: -25px;
+    right: -25px;
+    left: unset;
+    rotate: 90deg;
+  }
+
+  .vision__frame__back img:nth-child(3) {
+    width: 37px;
+    height: 30px;
+  }
+
+  .vision__frame__front {
+    width: 12.75rem;
+    height: 12.75rem;
+    padding: 1rem;
+    transform: translate(10%, 90%);
+  }
+
+  .vision__frame__front p {
+    font-size: 1.375rem;
+    line-height: 2rem;
+  }
+
+  .vision__frame__front img {
+    left: -25px;
+    right: unset;
+    rotate: 90deg;
+  }
+}
+
+.expertise {
+  background-color: var(--petrol-blue-500);
+  padding-block: 4rem;
+}
+
+.expertise__grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.expertise__grid__item {
+  width: 320px;
+  height: 260px;
+  padding: 2.5rem 1.25rem 1.25rem 1.25rem;
+  text-align: center;
+  border: 1px solid var(--ocher-100);
+  position: relative;
+  text-shadow: var(--text-shadow);
+}
+
+.expertise__grid__item--active {
+  display: block !important;
+}
+
+.expertise__grid__item img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.expertise__grid__item img:first-child {
+  padding: 0.25rem;
+  background-color: var(--petrol-blue-500);
+}
+
+.expertise__grid__item h4 {
+  font-family: "Philosopher";
+  color: var(--ocher-100);
+  padding-bottom: 0.75rem;
+}
+
+.expertise__grid__item span {
+  display: block;
+  color: var(--white);
+}
+
+@media (max-width: 640px) {
+  .expertise__grid__item {
+    display: none;
+  }
+}
+
+.adn {
+  background-color: var(--ocher-100);
+  padding-block: 4rem;
+}
+
+.adn__container {
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+  width: 100%;
+}
+
+.adn__container__item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  align-items: center;
+  text-align: center;
+}
+
+.adn__container__item h4 {
+  font-family: "Philosopher";
+  color: var(--petrol-blue-500);
+}
+
+.adn__container__item p {
+  font-family: "Ubuntu";
+  color: var(--petrol-blue-500);
+  max-width: 675px;
+}
+
+.ecosystem {
+  background-image: url("../img/ecosystem-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-shadow: var(--text-shadow);
+}
+
+.ecosystem__container {
+  align-items: center;
+  background-color: var(--petrol-blue-opacity-50);
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  opacity: 0.85;
+  text-align: center;
+  padding-block: 5rem;
+}
+
+.ecosystem__container__text {
+  color: var(--white);
+  padding-bottom: 5rem;
+}
+
+.ecosystem__grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  row-gap: 5rem;
+}
+
+#ecoNextBtn > .ecosystem__grid-arrow {
+  rotate: 180deg;
+}
+
+.ecosystem__grid__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  color: var(--ocher-100);
+  flex: 50%;
+}
+
+.ecosystem__grid__item--active {
+  display: flex !important;
+}
+
+.ecosystem__grid__item span {
+  width: 40px;
+  height: 8px;
+  border-radius: 8px;
+}
+
+.ecosystem__grid__item:nth-child(1) span {
+  background-color: var(--honey);
+}
+
+.ecosystem__grid__item:nth-child(2) span {
+  background-color: var(--orange);
+}
+
+.ecosystem__grid__item:nth-child(3) span {
+  background-color: var(--ocher-500);
+}
+
+.ecosystem__grid__item:nth-child(4) span {
+  background-color: var(--garnet);
+}
+
+/* .ecosystem__grid__item:nth-child(3) span {
+  background-color: var(--eggplant);
+} */
+
+@media (max-width: 640px) {
+  .ecosystem__grid__item {
+    display: none;
+  }
+}
+
+.footer {
+  background-color: var(--ocher-100);
+}
+
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+  align-items: center;
+  padding-block: 11rem;
+}
+
+.footer__container__contact {
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+  align-items: center;
+  text-align: center;
+}
+
+.footer__container__contact h3 {
+  color: var(--ocher-500);
+  padding-bottom: 0.75rem;
+}
+
+.footer__container__contact h2 {
+  color: var(--petrol-blue-500);
+  font-family: "Philosopher";
+}
+
+.footer__container__contact img:last-child {
+  rotate: 90deg;
+}
+
+.footer__container__position {
+  align-items: center;
+  color: var(--petrol-blue-500);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
