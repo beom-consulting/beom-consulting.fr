@@ -482,20 +482,20 @@ header {
 }
 
 .ecosystem__grid__item:nth-child(2) span {
-  background-color: var(--orange);
+  background-color: var(--forest);
 }
 
 .ecosystem__grid__item:nth-child(3) span {
-  background-color: var(--ocher-500);
+  background-color: var(--orange);
 }
 
 .ecosystem__grid__item:nth-child(4) span {
-  background-color: var(--garnet);
+  background-color: var(--ocher-500);
 }
 
-/* .ecosystem__grid__item:nth-child(3) span {
-  background-color: var(--eggplant);
-} */
+.ecosystem__grid__item:nth-child(5) span {
+  background-color: var(--garnet);
+}
 
 @media (max-width: 640px) {
   .ecosystem__grid__item {
