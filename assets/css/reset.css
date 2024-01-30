@@ -42,11 +42,6 @@ h6 {
   overflow-wrap: break-word;
 }
 
-#root,
-#__next {
-  isolation: isolate;
-}
-
 ul {
   list-style: none;
   padding: 0;

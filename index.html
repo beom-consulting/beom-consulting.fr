@@ -3,249 +3,373 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title></title>
-    <meta name="description" content="" />
+    <title>BEOM Consulting</title>
+    <meta
+      name="description"
+      content="Nous sommes une entreprise experte en
+    conseil IT, dédiée à la modernisation des systèmes d’information. Nous
+    mettons de l’ordre dans la complexité croissante de vos SI avec pragmatisme
+    et pédagogie afin de vous simplifier l'intégration de nouvelles
+    technologies."
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/favicon/site.webmanifest" />
     <link rel="stylesheet" href="assets/css/global.css" />
     <link rel="stylesheet" href="assets/css/reset.css" />
     <link rel="stylesheet" href="assets/css/variables.css" />
     <link rel="stylesheet" href="assets/css/font.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="./assets/js/index.js" defer></script>
+    <script src="./assets/js/ecosystem.js" defer></script>
+    <script src="./assets/js/expertise.js" defer></script>
   </head>
   <body>
     <header>
-      <nav class="navbar">
-        <img src="./assets/img/Logo-default.svg" alt="Beom Consulting Logo" />
-        <ul class="navbar__links">
-          <li><a class="body-accent">Accueil</a></li>
-          <li><a class="body-accent">Vision</a></li>
-          <li><a class="body-accent">Missions</a></li>
-          <li><a class="body-accent">ADN</a></li>
-          <li><a class="body-accent">Ecosystème</a></li>
-        </ul>
-        <button type="button" aria-label="Contact button" class="button">
-          Contactez-nous
-        </button>
+      <nav>
+        <div class="navbar">
+          <img
+            src="./assets/img/Logo-default.svg"
+            alt="Beom Consulting Logo"
+            class="navbar-icon"
+          />
+          <ul class="navbar__links">
+            <li>
+              <a class="body navbar__links-text" href="#home">Accueil</a>
+            </li>
+            <li>
+              <a class="body navbar__links-text" href="#vision">Vision</a>
+            </li>
+            <li>
+              <a class="body navbar__links-text" href="#expertise"
+                >Expertises</a
+              >
+            </li>
+            <li><a class="body navbar__links-text" href="#adn">ADN</a></li>
+            <li>
+              <a class="body navbar__links-text" href="#ecosystem"
+                >Ecosystème</a
+              >
+            </li>
+          </ul>
+          <a class="button navbar-contact" href="#contact"> Contactez-nous </a>
+          <button
+            class="navbar-burger"
+            alt="Menu burger"
+            aria-label="Menu burger"
+          >
+            <img
+              id="navbar-burger-icon"
+              src="assets/img/menu-burger.svg"
+              alt="Menu burger icone"
+            />
+          </button>
+        </div>
+        <div class="mobile-navbar">
+          <ul class="navbar__links">
+            <li>
+              <a class="navbar__links-text" href="#home">ACCUEIL</a>
+            </li>
+            <li>
+              <a class="navbar__links-text" href="#vision">VISION</a>
+            </li>
+            <li>
+              <a class="navbar__links-text" href="#expertise">EXPERTISES</a>
+            </li>
+            <li><a class="navbar__links-text" href="#adn">ADN</a></li>
+            <li>
+              <a class="navbar__links-text" href="#ecosystem">ECOSYSTÈME</a>
+            </li>
+          </ul>
+          <a class="button navbar-contact" href="#contact" id="contact-btn">
+            Contactez-nous
+          </a>
+        </div>
       </nav>
     </header>
     <main>
-      <section class="home">
+      <section id="home" class="home">
         <div class="home__container">
           <div class="container">
-            <h1 class="home__container__text">
-              Nous sommes une
-              <span>entreprise experte en conseil IT,</span> dédiée à la
-              modernisation des systèmes d’information.
-            </h1>
-          </div>
-        </div>
-      </section>
-      <section class="vision">
-        <div class="container">
-          <img
-            src="assets/img/Logo-icon.svg"
-            alt="Beom Consulting Icon"
-            class="vision__icon"
-          />
-          <h4>/ VISION /</h4>
-          <div class="vision__text">
-            <h2>Rendre l’IT intelligible avec pragmatisme et pédagogie</h2>
-            <img src="assets/img/hatch_ocher-500.svg" alt="" />
-            <p class="large-body">
-              Nous sommes animés par la volonté d’adopter la solution la plus
-              pratique pour répondre à vos besoins actuels, sans compromettre
-              vos possibilités futures.
-            </p>
-          </div>
-          <div class="vision__frame">
-            <div class="vision__frame__back">
-              <img
-                src="assets/img/chevron_ocher-500.svg"
-                alt=""
-                class="vision__frame__back__chevron"
-              />
+            <div class="home__container__text">
               <h1>
-                Nous mettons de l’ordre dans la complexité croissante de vos
-                systèmes d’informations,
+                Nous sommes une
+                <span>entreprise experte en conseil IT,</span> dédiée à la
+                modernisation des systèmes d’information.
               </h1>
-              <img
-                src="assets/img/hatch_ocher-500.svg"
-                alt=""
-                class="vision__frame__back__hatch"
-              />
+              <img src="assets/img/hatch_ocher-500.svg" alt="Griffes icone" />
+              <p class="large-body-accent">
+                Votre réussite numérique, notre vision pragmatique : la
+                transformation digitale se vit du point de vue du client.
+                Savoir-faire technologique et recommandations personnalisées
+                s'allient pour votre transformation efficace et tangible.
+              </p>
             </div>
-            <div class="vision__frame__front">
+          </div>
+        </div>
+      </section>
+      <section id="vision" class="vision">
+        <img
+          src="assets/img/Logo-icon.svg"
+          alt="Beom Consulting Icon"
+          class="vision-icon"
+        />
+        <div class="container">
+          <div class="vision__container">
+            <div class="vision__text">
+              <h3>/ VISION /</h3>
               <h4>
-                AFIN DE VOUS SIMPLIFIER L’INTÉGRATION DE NOUVELLES TECHNOLOGIES.
+                La capacité d'adaptation et de résilience d'une entreprise
+                décuple ses performances. Les SI sont alors un vrai levier de
+                compétitivité et de croissance.
               </h4>
-              <img
-                src="assets/img/chevron_pb_500.svg"
-                alt=""
-                class="vision__frame__front__chevron"
-              />
+              <p class="large-body">
+                Il est fondamental de rendre l'IT intelligible. Notre devise :
+                pragmatisme et pédagogie pour avancer.
+              </p>
+            </div>
+            <div class="vision__frame">
+              <div class="vision__frame__back">
+                <img
+                  src="assets/img/chevron_ocher-500.svg"
+                  alt="Chevron superieur icone"
+                />
+                <h2>
+                  Nous mettons de l’ordre dans la complexité croissante de vos
+                  systèmes d’informations,
+                </h2>
+                <img src="assets/img/hatch_ocher-500.svg" alt="Griffes icone" />
+                <div class="vision__frame__front">
+                  <p class="large-body-accent">
+                    AFIN DE VOUS SIMPLIFIER L’INTÉGRATION DE NOUVELLES
+                    TECHNOLOGIES.
+                  </p>
+                  <img
+                    src="assets/img/chevron_pb_500.svg"
+                    alt="Chevron inferieur icone"
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="mission">
+      <section id="expertise" class="expertise">
         <div class="container">
-          <h4>/ MISSIONS /</h4>
-          <!-- Voir avec Floriane pour unifier la taille du container (1296px) pour faire la meme taille que les autres (1076px) -->
-          <div class="mission__grid">
-            <div class="mission__grid__item">
-              <div>
-                <img src="assets/img/hatch_ocher-500.svg" alt="" />
-                <!-- <img src="assets/img/tachymetre.svg" alt="" /> -->
-              </div>
-              <h4 class="mission__grid__item__title">
-                ÉVALUER VOS SYSTÈMES EXISTANTS
-              </h4>
-              <p class="body mission__grid__item__text">
-                Analyser vos infrastructures, étudier vos processus et outils
+          <h3>/ EXPERTISES /</h3>
+          <div class="expertise__grid">
+            <div class="expertise__grid__item">
+              <img src="assets/img/hatch_dark.svg" alt="" />
+              <img src="assets/img/hand.svg" alt="" />
+              <h4>Culture</h4>
+              <p class="small-body">
+                <span>Transformation Agile</span>
+                <span>Devops</span>
+                <span>Innovation</span>
+                <span>Change Management</span>
               </p>
             </div>
-            <div class="mission__grid__item">
-              <div>
-                <img src="assets/img/hatch_ocher-500.svg" alt="" />
-                <img src="" alt="" />
-              </div>
-              <h4 class="mission__grid__item__title">IDENTIFIER VOS BESOINS</h4>
-              <p class="body mission__grid__item__text">
-                Clarifier vos objectifs, comprendre votre dette technique
+            <div class="expertise__grid__item">
+              <img src="assets/img/hatch_dark.svg" alt="" />
+              <img src="assets/img/chest.svg" alt="" />
+              <h4>Organisation</h4>
+              <p class="small-body">
+                <span>Audit</span>
+                <span>Schéma Directeur</span>
+                <span>Direction de projets</span>
               </p>
             </div>
-            <div class="mission__grid__item">
-              <div>
-                <img src="assets/img/hatch_ocher-500.svg" alt="" />
-              </div>
-              <h4 class="mission__grid__item__title">PROPOSER DES SOLUTIONS</h4>
-              <p class="body mission__grid__item__text">
-                Trouver la bonne technologique : migration Cloud, Data, IA...
+            <div class="expertise__grid__item">
+              <img src="assets/img/hatch_dark.svg" alt="" />
+              <img src="assets/img/setting.svg" alt="" />
+              <h4>Modernisation</h4>
+              <p class="small-body">
+                <span>Gestion dette technique</span>
+                <span>Urbanisation des SI</span>
+                <span>Low Code</span>
+                <span>Portage & Migration</span>
               </p>
             </div>
-            <div class="mission__grid__item">
-              <div>
-                <img src="assets/img/hatch_ocher-500.svg" alt="" />
-              </div>
-              <h4 class="mission__grid__item__title">
-                OPTIMISER VOS PROCESSUS
-              </h4>
-              <p class="body mission__grid__item__text">
-                Renforcer votre sécurité, vous mettre en conformité...
+            <div class="expertise__grid__item">
+              <img src="assets/img/hatch_dark.svg" alt="" />
+              <img src="assets/img/portable.svg" alt="" />
+              <h4>Technologie</h4>
+              <p class="small-body">
+                <span>Cloud Computing</span>
+                <span>API Management</span>
+                <span>Expertise Web & Mobile</span>
+                <span>Traitement de masse</span>
+                <span>Streaming</span>
               </p>
             </div>
-            <div class="mission__grid__item">
-              <div>
-                <img src="assets/img/hatch_ocher-500.svg" alt="" />
-              </div>
-              <h4 class="mission__grid__item__title">GÉREZ VOS PROJETS</h4>
-              <p class="body mission__grid__item__text">
-                Former votre équipe, constituer votre support...
+            <div class="expertise__grid__item">
+              <img src="assets/img/hatch_dark.svg" alt="" />
+              <img src="assets/img/chart.svg" alt="" />
+              <h4>Data</h4>
+              <p class="small-body">
+                <span>Gouvernance</span>
+                <span>Collecte</span>
+                <span>Transformation</span>
+                <span>Qualité / réglementaire</span>
+                <span>Big data / prédictif</span>
+              </p>
+            </div>
+            <div class="expertise__grid__item">
+              <img src="assets/img/hatch_dark.svg" alt="" />
+              <img src="assets/img/ampoule.svg" alt="" />
+              <h4>Design</h4>
+              <p class="small-body">
+                <span>User Experience</span>
+                <span>Design thinking</span>
+                <span>Design d’interface</span>
+                <span>Product Management</span>
               </p>
             </div>
           </div>
-          <div class="mission__use-cases">
-            <img
-              src="assets/img/hatch_ocher-500.svg"
-              alt=""
-              class="mission__use-cases__img"
-            />
-            <h2 class="mission__use-cases__title">Nos cas d’usage</h2>
+          <div class="slider__indicators">
+            <span
+              class="expertise__slider-indicator slider__indicators-item"
+            ></span>
+            <span
+              class="expertise__slider-indicator slider__indicators-item"
+            ></span>
+            <span
+              class="expertise__slider-indicator slider__indicators-item"
+            ></span>
+            <span
+              class="expertise__slider-indicator slider__indicators-item"
+            ></span>
+            <span
+              class="expertise__slider-indicator slider__indicators-item"
+            ></span>
+            <span
+              class="expertise__slider-indicator slider__indicators-item"
+            ></span>
           </div>
         </div>
       </section>
-      <section class="adn">
+      <section id="adn" class="adn">
         <div class="container">
-          <h4>/ ADN /</h4>
-          <div class="adn__container">
-            <div class="adn__container__item">
-              <img src="assets/img/Logo-transparent.svg" alt="" />
-              <h3 class="adn__container__item__title">
-                Une entreprise apprenante
-              </h3>
-              <p class="adn__container__item__text">
-                Former tout en encourageant la curiosité intellectuelle,
-                l’esprit critique et surtout l’envie d’apprendre comme celle de
-                transmettre.
-              </p>
-            </div>
-            <div class="adn__container__item">
-              <img src="assets/img/Logo-transparent.svg" alt="" />
-              <h3 class="adn__container__item__title">
-                Une entreprise flexible
-              </h3>
-              <p class="adn__container__item__text">
-                Cultiver l’autonomie et la confiance par un modèle
-                d’organisation souple, sans sacrifier l’accompagnement ni le
-                plaisir de se réunir.
-              </p>
-            </div>
-            <div class="adn__container__item">
-              <img src="assets/img/Logo-transparent.svg" alt="" />
-              <h3 class="adn__container__item__title">
-                Une entreprise inclusive
-              </h3>
-              <p class="adn__container__item__text">
-                Promouvoir un environnement de travail respectueux et équitable,
-                en sensibilisant à la diversité et à l’inclusion.
-              </p>
+          <div>
+            <h3>/ ADN /</h3>
+            <div class="adn__container">
+              <div class="adn__container__item">
+                <img src="assets/img/Logo-transparent.svg" alt="" />
+                <h4>Une entreprise apprenante</h4>
+                <p class="body">
+                  Former tout en encourageant la curiosité intellectuelle,
+                  l’esprit critique et surtout l’envie d’apprendre comme celle
+                  de transmettre.
+                </p>
+              </div>
+              <div class="adn__container__item">
+                <img src="assets/img/Logo-transparent.svg" alt="" />
+                <h4>Une entreprise flexible</h4>
+                <p class="body">
+                  Cultiver l’autonomie et la confiance par un modèle
+                  d’organisation souple, sans sacrifier l’accompagnement ni le
+                  plaisir de se réunir.
+                </p>
+              </div>
+              <div class="adn__container__item">
+                <img src="assets/img/Logo-transparent.svg" alt="" />
+                <h4>Une entreprise inclusive</h4>
+                <p class="body">
+                  Promouvoir un environnement de travail respectueux et
+                  équitable, en sensibilisant à la diversité et à l’inclusion.
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="ecosystem">
+      <section id="ecosystem" class="ecosystem">
         <div class="ecosystem__container">
           <div class="container">
-            <h4>/ écosystème /</h4>
-            <p class="large-body ecosystem__container__text">
-              Si il est impossible d’être expert en tout, nous avons en revanche
-              toujours celui qu’il faut à vous proposer grâce à notre réseau de
-              partenaires stratégiques.
+            <h3>/ ÉCOSYSTÈME /</h3>
+            <p class="body-accent ecosystem__container__text">
+              Nous avons scellé des partenariats stratégiques avec des acteurs
+              spécialistes dans leurs domaines. En effet, nous sommes convaincus
+              que l'union des expertises garantit une qualité de service
+              optimale.
             </p>
-            <!-- Le mieux est de faire une grid je pense, surtout pour gérer le responsive
-            J'ai essayé avec Flex (wrap) mais pas concluant -->
-              <div class="ecosystem__grid">
-                <div class="ecosystem__grid__item">
-                  <span></span>
-                  <h5>E-commerce</h5>
-                </div>
-                <div class="ecosystem__grid__item">
-                  <span></span>
-                  <h5>SAP & Supply</h5>
-                </div>
+            <div class="ecosystem__grid">
+              <button id="ecoPrevBtn" class="ecosystem__grid-btn">
+                <img
+                  src="assets/img/arrow.svg"
+                  alt="fléche gauche icone"
+                  class="ecosystem__grid-arrow"
+                />
+              </button>
+              <div class="ecosystem__grid__item">
+                <img src="assets/img/partners/almond.svg" alt="Almond logo" />
+                <span></span>
+                <p class="large-body-accent">Cybersécurité</p>
               </div>
-              <div class="ecosystem__grid">
-                <div class="ecosystem__grid__item">
-                  <span></span>
-                  <h5>Cybersécurité</h5>
-                </div>
-                <div class="ecosystem__grid__item">
-                  <span></span>
-                  <h5>Intelligence Artificielle</h5>
-                </div>
-                <div class="ecosystem__grid__item">
-                  <span></span>
-                  <h5>Data</h5>
-                </div>
+              <div class="ecosystem__grid__item">
+                <img
+                  src="assets/img/partners/neovision.svg"
+                  alt="Neovision logo"
+                />
+                <span></span>
+                <p class="large-body-accent">Intelligence artificielle</p>
               </div>
+              <div class="ecosystem__grid__item">
+                <img src="assets/img/partners/hrc.svg" alt="Hrc logo" />
+                <span></span>
+                <p class="large-body-accent">SAP & Supply</p>
+              </div>
+              <div class="ecosystem__grid__item">
+                <img src="assets/img/partners/adipso.svg" alt="Adipso logo" />
+                <span></span>
+                <p class="large-body-accent">E-commerce</p>
+              </div>
+              <div class="ecosystem__grid__item">
+                <img src="assets/img/partners/meteros.svg" alt="Meteros logo" />
+                <span></span>
+                <p class="large-body-accent">Data</p>
+              </div>
+              <button id="ecoNextBtn" class="ecosystem__grid-btn">
+                <img
+                  src="assets/img/arrow.svg"
+                  alt="fléche gauche icone"
+                  class="ecosystem__grid-arrow"
+                />
+              </button>
             </div>
           </div>
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer id="contact" class="footer">
       <div class="footer__container">
         <div class="footer__container__contact">
-          <img src="assets/img/stripe_ocher-500.svg" alt="" />
+          <img src="assets/img/hatch_ocher-500.svg" alt="Griffes icone" />
           <div>
-            <h4>Beom Consulting</h4>
+            <h3>CONTACTEZ-NOUS</h3>
             <h2>contact@beom-consulting.fr</h2>
           </div>
-          <img src="assets/img/stripe_ocher-500.svg" alt="" />
+          <img src="assets/img/hatch_ocher-500.svg" alt="Griffes icone" />
         </div>
         <div class="footer__container__position">
-          <img src="assets/img/position.svg" alt="" />
-          <h4>LYON</h4>
+          <img src="assets/img/position.svg" alt="Position icone" />
+          <h3>LYON</h3>
         </div>
       </div>
     </footer>
