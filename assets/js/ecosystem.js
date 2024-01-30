@@ -1,6 +1,4 @@
 ecosytemItems = document.querySelectorAll(".ecosystem__grid__item");
-prevBtn = document.querySelector("#ecoPrevBtn");
-nextBtn = document.querySelector("#ecoNextBtn");
 
 let ecosystemIndex = 0;
 
@@ -16,15 +14,6 @@ function showNextEcosystemItem() {
   ecosystemIndex = (ecosystemIndex + 1) % ecosytemItems.length;
   showEcosystemItem(ecosystemIndex);
 }
-
-function showPrevEcosystemItem() {
-  ecosystemIndex =
-    (ecosystemIndex - 1 + ecosytemItems.length) % ecosytemItems.length;
-  showEcosystemItem(ecosystemIndex);
-}
-
-nextBtn.addEventListener("click", showNextEcosystemItem);
-prevBtn.addEventListener("click", showPrevEcosystemItem);
 
 showEcosystemItem(ecosystemIndex);
 

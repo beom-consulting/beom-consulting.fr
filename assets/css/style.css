@@ -10,6 +10,7 @@ header {
 .header--active {
   background-color: var(--petrol-blue-500);
   backdrop-filter: unset;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .navbar {
@@ -31,6 +32,14 @@ header {
 .navbar__links li {
   flex: 1;
   text-align: center;
+}
+
+.navbar__links a {
+  font-family: "Ubuntu";
+  font-size: 1.375rem;
+  font-weight: 400;
+  line-height: 2.0625rem;
+  letter-spacing: 0.1em;
 }
 
 .navbar__links a:hover {
@@ -439,14 +448,9 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap-reverse;
+  flex-wrap: wrap;
   flex-direction: row;
-  column-gap: 6rem;
   row-gap: 5rem;
-}
-
-.ecosystem__grid-btn {
-  display: none;
 }
 
 #ecoNextBtn > .ecosystem__grid-arrow {
@@ -459,7 +463,7 @@ header {
   align-items: center;
   gap: 0.75rem;
   color: var(--ocher-100);
-  width: 280px;
+  flex: 50%;
 }
 
 .ecosystem__grid__item--active {
@@ -472,36 +476,27 @@ header {
   border-radius: 8px;
 }
 
-.ecosystem__grid__item:nth-child(5) span {
+.ecosystem__grid__item:nth-child(1) span {
   background-color: var(--honey);
 }
 
-.ecosystem__grid__item:nth-child(6) span {
+.ecosystem__grid__item:nth-child(2) span {
   background-color: var(--orange);
 }
 
-.ecosystem__grid__item:nth-child(2) span {
+.ecosystem__grid__item:nth-child(3) span {
   background-color: var(--ocher-500);
 }
 
-.ecosystem__grid__item:nth-child(3) span {
+.ecosystem__grid__item:nth-child(4) span {
   background-color: var(--garnet);
 }
 
-.ecosystem__grid__item:nth-child(4) span {
+/* .ecosystem__grid__item:nth-child(3) span {
   background-color: var(--eggplant);
-}
+} */
 
 @media (max-width: 640px) {
-  .ecosystem__grid {
-    gap: 0;
-    justify-content: space-between;
-  }
-
-  .ecosystem__grid-btn {
-    display: block;
-  }
-
   .ecosystem__grid__item {
     display: none;
   }

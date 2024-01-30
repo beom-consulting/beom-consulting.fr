@@ -31,11 +31,11 @@
       href="assets/favicon/favicon-16x16.png"
     />
     <link rel="manifest" href="assets/favicon/site.webmanifest" />
-    <link rel="stylesheet" href="assets/css/global.css" />
-    <link rel="stylesheet" href="assets/css/reset.css" />
-    <link rel="stylesheet" href="assets/css/variables.css" />
-    <link rel="stylesheet" href="assets/css/font.css" />
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/font.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/variables.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/global.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
     <script src="./assets/js/index.js" defer></script>
     <script src="./assets/js/ecosystem.js" defer></script>
     <script src="./assets/js/expertise.js" defer></script>
@@ -51,21 +51,17 @@
           />
           <ul class="navbar__links">
             <li>
-              <a class="body navbar__links-text" href="#home">Accueil</a>
+              <a class="navbar__links-text" href="#home">ACCUEIL</a>
             </li>
             <li>
-              <a class="body navbar__links-text" href="#vision">Vision</a>
+              <a class="navbar__links-text" href="#vision">VISION</a>
             </li>
             <li>
-              <a class="body navbar__links-text" href="#expertise"
-                >Expertises</a
-              >
+              <a class="navbar__links-text" href="#expertise">EXPERTISES</a>
             </li>
-            <li><a class="body navbar__links-text" href="#adn">ADN</a></li>
+            <li><a class="navbar__links-text" href="#adn">ADN</a></li>
             <li>
-              <a class="body navbar__links-text" href="#ecosystem"
-                >Ecosystème</a
-              >
+              <a class="navbar__links-text" href="#ecosystem">ECOSYSTÈME</a>
             </li>
           </ul>
           <a class="button navbar-contact" href="#contact"> Contactez-nous </a>
@@ -110,8 +106,8 @@
             <div class="home__container__text">
               <h1>
                 Nous sommes une
-                <span>entreprise experte en conseil IT,</span> dédiée à la
-                modernisation des systèmes d’information.
+                <span>entreprise experte en conseil IT,</span>
+                dédiée&nbsp;à&nbsp;la modernisation des systèmes d’information.
               </h1>
               <img src="assets/img/hatch_ocher-500.svg" alt="Griffes icone" />
               <p class="large-body-accent">
@@ -310,13 +306,16 @@
               optimale.
             </p>
             <div class="ecosystem__grid">
-              <button id="ecoPrevBtn" class="ecosystem__grid-btn">
-                <img
-                  src="assets/img/arrow.svg"
-                  alt="fléche gauche icone"
-                  class="ecosystem__grid-arrow"
-                />
-              </button>
+              <div class="ecosystem__grid__item">
+                <img src="assets/img/partners/adipso.svg" alt="Adipso logo" />
+                <span></span>
+                <p class="large-body-accent">E-commerce</p>
+              </div>
+              <div class="ecosystem__grid__item">
+                <img src="assets/img/partners/meteros.svg" alt="Meteros logo" />
+                <span></span>
+                <p class="large-body-accent">Data</p>
+              </div>
               <div class="ecosystem__grid__item">
                 <img src="assets/img/partners/almond.svg" alt="Almond logo" />
                 <span></span>
@@ -330,28 +329,6 @@
                 <span></span>
                 <p class="large-body-accent">Intelligence artificielle</p>
               </div>
-              <div class="ecosystem__grid__item">
-                <img src="assets/img/partners/hrc.svg" alt="Hrc logo" />
-                <span></span>
-                <p class="large-body-accent">SAP & Supply</p>
-              </div>
-              <div class="ecosystem__grid__item">
-                <img src="assets/img/partners/adipso.svg" alt="Adipso logo" />
-                <span></span>
-                <p class="large-body-accent">E-commerce</p>
-              </div>
-              <div class="ecosystem__grid__item">
-                <img src="assets/img/partners/meteros.svg" alt="Meteros logo" />
-                <span></span>
-                <p class="large-body-accent">Data</p>
-              </div>
-              <button id="ecoNextBtn" class="ecosystem__grid-btn">
-                <img
-                  src="assets/img/arrow.svg"
-                  alt="fléche gauche icone"
-                  class="ecosystem__grid-arrow"
-                />
-              </button>
             </div>
           </div>
         </div>

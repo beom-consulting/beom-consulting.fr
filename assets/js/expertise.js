@@ -69,5 +69,5 @@ function handleTouchMove(evt) {
   yDown = null;
 }
 
-expertiseGrid.addEventListener("touchstart", handleTouchStart, false);
-expertiseGrid.addEventListener("touchmove", handleTouchMove, false);
+expertiseGrid.addEventListener("touchstart", handleTouchStart);
+expertiseGrid.addEventListener("touchmove", handleTouchMove);

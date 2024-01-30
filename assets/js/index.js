@@ -10,6 +10,7 @@ const contactBtn = document.querySelector("#contact-btn");
 const menuIcon = document.querySelector("#navbar-burger-icon");
 
 let prevScrollpos = window.scrollY;
+let isSectionHome = false;
 
 function changeLinkState() {
   let index = sections.length;
@@ -21,36 +22,37 @@ function changeLinkState() {
     index = index + 5;
   }
   navLinks[index].classList.add("body-accent");
+  if (navLinks[index].attributes.href.value === "#home") {
+    isSectionHome = true;
+    header.classList.remove("header--active");
+  } else {
+    isSectionHome = false;
+    header.classList.add("header--active");
+  }
 }
 
 function toggleMobileNav() {
   if (window.innerWidth > 640) return;
 
   body.classList.toggle("no-scroll");
-  header.classList.toggle("header--active");
   mobileNav.classList.toggle("mobile-navbar--active");
   navBtn.classList.toggle("navbar-burger--active");
-  menuIcon.src = header.classList.contains("header--active")
+  if (isSectionHome) {
+    header.classList.toggle("header--active");
+  }
+  menuIcon.src = navBtn.classList.contains("navbar-burger--active")
     ? "./assets/img/close.svg"
     : "./assets/img/menu-burger.svg";
 }
 
-navBtn.addEventListener("click", () => {
-  toggleMobileNav();
-});
+navBtn.addEventListener("click", toggleMobileNav);
 
-contactBtn.addEventListener("click", () => {
-  toggleMobileNav();
-});
+contactBtn.addEventListener("click", toggleMobileNav);
 
 navLinks.forEach((link) => {
-  link.addEventListener("click", () => {
-    toggleMobileNav();
-  });
+  link.addEventListener("click", toggleMobileNav);
 });
 
 changeLinkState();
 
-window.addEventListener("scroll", () => {
-  changeLinkState();
-});
+window.addEventListener("scroll", changeLinkState);
