@@ -336,7 +336,7 @@ header {
 
 .expertise {
   background-color: var(--petrol-blue-500);
-  padding-block: 4rem;
+  padding-block: 6rem;
 }
 
 .expertise__grid {
@@ -391,7 +391,7 @@ header {
 
 .adn {
   background-color: var(--ocher-100);
-  padding-block: 4rem;
+  padding-block: 6rem;
 }
 
 .adn__container {
@@ -436,7 +436,7 @@ header {
   justify-content: center;
   opacity: 0.85;
   text-align: center;
-  padding-block: 5rem;
+  padding-block: 6rem;
 }
 
 .ecosystem__container__text {
