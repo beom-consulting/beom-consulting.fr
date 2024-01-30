@@ -464,7 +464,7 @@ header {
   align-items: center;
   gap: 0.75rem;
   color: var(--ocher-100);
-  flex: 50%;
+  flex: 33%;
 }
 
 .ecosystem__grid__item--active {
