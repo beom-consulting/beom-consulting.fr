@@ -142,7 +142,7 @@ header {
 }
 
 .home {
-  background-image: url("../img/home-bg.png");
+  background-image: url("../img/home-bg.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -442,7 +442,7 @@ header {
 }
 
 .ecosystem {
-  background-image: url("../img/ecosystem-bg.png");
+  background-image: url("../img/ecosystem-bg.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
