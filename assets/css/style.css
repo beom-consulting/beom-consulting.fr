@@ -501,6 +501,7 @@ header {
 @media (max-width: 640px) {
   .ecosystem__grid__item {
     display: none;
+    flex: 1;
   }
 }
 
