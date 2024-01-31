@@ -58,6 +58,7 @@ function handleTouchMove(evt) {
   let yDiff = yDown - yUp;
 
   if (Math.abs(xDiff) > Math.abs(yDiff)) {
+    evt.preventDefault(); // Empêcher le scroll vertical
     if (xDiff > 0) {
       showNextExpertiseItem();
     } else {
