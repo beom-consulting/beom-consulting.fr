@@ -4,72 +4,74 @@ html {
 
 h1 {
   font-family: "Ubuntu Bold";
+  font-size: 2.5rem;
   font-weight: 700;
-  font-size: 2.75rem;
-  line-height: 3.3125rem;
+  line-height: 3rem;
   text-shadow: var(--text-shadow);
 }
 
 h2 {
   font-family: "Ubuntu Bold";
+  font-size: 2rem;
   font-weight: 700;
-  font-size: 2.5rem;
-  line-height: 3rem;
+  line-height: 2.4rem;
 }
 
 h3 {
   font-family: "Ubuntu Medium";
-  font-weight: 500;
   font-size: 1.75rem;
+  font-weight: 500;
   letter-spacing: 0.2625rem;
+  line-height: 2.1rem;
 }
 
 h4 {
-  font-family: "Ubuntu";
+  font-family: "Ubuntu Bold";
+  font-size: 1.75rem;
   font-weight: 700;
-  font-size: 2rem;
-  line-height: 2.4375rem;
+  line-height: 2.1rem;
 }
 
 .large-body {
   font-family: "Ubuntu Light";
+  font-size: 1.5rem;
   font-weight: 300;
-  font-size: 1.625rem;
-  line-height: 2.4375rem;
+  line-height: 2.25rem;
 }
 
 .large-body-accent {
   font-family: "Ubuntu Medium";
+  font-size: 1.5rem;
   font-weight: 500;
-  font-size: 1.625rem;
-  line-height: 2.4375rem;
+  line-height: 2.25rem;
 }
 
 .body {
   font-family: "Ubuntu Light";
+  font-size: 1.25rem;
   font-weight: 300;
-  font-size: 1.375rem;
-  line-height: 2.0625rem;
+  line-height: 1.875rem;
 }
 
 .body-accent {
-  font-family: "Ubuntu Medium" !important;
+  font-family: "Ubuntu Medium";
+  font-size: 1.25rem;
   font-weight: 500;
-  font-size: 1.375rem;
-  line-height: 2.0625rem;
-  text-shadow: var(--text-shadow);
+  line-height: 1.875rem;
 }
 
 .small-body {
   font-family: "Ubuntu";
+  font-size: 1.125rem;
   font-weight: 400;
-  font-size: 1.25rem;
-  line-height: 1.875rem;
+  line-height: 1.6875rem;
 }
 
 .button {
+  font-family: "Philosopher";
+  font-size: 1.25rem;
   font-weight: 700;
-  font-size: 1.5rem;
+  line-height: 1.5rem;
 }
 
 .container {

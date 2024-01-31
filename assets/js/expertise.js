@@ -30,7 +30,9 @@ function showPrevExpertiseItem() {
   showExpertiseItem(expertiseIndex);
 }
 
-showExpertiseItem(expertiseIndex);
+if (window.innerWidth < 640) {
+  showExpertiseItem(expertiseIndex);
+}
 
 // handle swipe events on expertise grid items
 let xDown = null;

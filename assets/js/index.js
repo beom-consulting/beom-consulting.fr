@@ -9,7 +9,6 @@ const header = document.querySelector("header");
 const contactBtn = document.querySelector("#contact-btn");
 const menuIcon = document.querySelector("#navbar-burger-icon");
 
-let prevScrollpos = window.scrollY;
 let isSectionHome = false;
 
 function changeLinkState() {
@@ -17,11 +16,14 @@ function changeLinkState() {
 
   while (--index && window.scrollY + 50 < sections[index].offsetTop) {}
 
-  navLinks.forEach((link) => link.classList.remove("body-accent"));
-  if (window.innerWidth < 640) {
+  navLinks.forEach((link) =>
+    link.classList.remove("navbar__links-text--active")
+  );
+  if (window.innerWidth < 1024) {
     index = index + 5;
   }
-  navLinks[index].classList.add("body-accent");
+  navLinks[index].classList.add("navbar__links-text--active");
+  header.classList.add("header--transition");
   if (navLinks[index].attributes.href.value === "#home") {
     isSectionHome = true;
     header.classList.remove("header--active");
@@ -31,13 +33,18 @@ function changeLinkState() {
   }
 }
 
+changeLinkState();
+
+window.addEventListener("scroll", changeLinkState);
+
 function toggleMobileNav() {
-  if (window.innerWidth > 640) return;
+  if (window.innerWidth > 1024) return;
 
   body.classList.toggle("no-scroll");
   mobileNav.classList.toggle("mobile-navbar--active");
   navBtn.classList.toggle("navbar-burger--active");
   if (isSectionHome) {
+    header.classList.remove("header--transition");
     header.classList.toggle("header--active");
   }
   menuIcon.src = navBtn.classList.contains("navbar-burger--active")
@@ -52,7 +59,3 @@ contactBtn.addEventListener("click", toggleMobileNav);
 navLinks.forEach((link) => {
   link.addEventListener("click", toggleMobileNav);
 });
-
-changeLinkState();
-
-window.addEventListener("scroll", changeLinkState);
