@@ -11,7 +11,7 @@ const menuIcon = document.querySelector("#navbar-burger-icon");
 
 let isSectionHome = false;
 
-function changeLinkState() {
+function changeNavState() {
   let index = sections.length;
 
   while (--index && window.scrollY + 50 < sections[index].offsetTop) {}
@@ -23,19 +23,19 @@ function changeLinkState() {
     index = index + 5;
   }
   navLinks[index].classList.add("navbar__links-text--active");
-  header.classList.add("header--transition");
-  if (navLinks[index].attributes.href.value === "#home") {
-    isSectionHome = true;
+  if (window.scrollY < 50) {
+    header.classList.add("header--transition");
     header.classList.remove("header--active");
+    isSectionHome = true;
   } else {
-    isSectionHome = false;
     header.classList.add("header--active");
+    isSectionHome = false;
   }
 }
 
-changeLinkState();
+changeNavState();
 
-window.addEventListener("scroll", changeLinkState);
+window.addEventListener("scroll", changeNavState);
 
 function toggleMobileNav() {
   if (window.innerWidth > 1024) return;

@@ -15,7 +15,7 @@ header {
 }
 
 .header--transition {
-  transition: background-color 0.5s ease-in-out;
+  transition: background-color 0.25s ease-out;
 }
 
 .navbar {
