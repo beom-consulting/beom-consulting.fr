@@ -231,7 +231,7 @@ header {
 }
 
 .vision__frame__back {
-  background-image: url("../img/vision-bg.png");
+  background-image: url("../img/vision-bg.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
