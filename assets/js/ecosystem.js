@@ -18,5 +18,5 @@ function showNextEcosystemItem() {
 // change item every 5 seconds if mobile view
 if (window.innerWidth < 640) {
   showEcosystemItem(ecosystemIndex);
-  setInterval(showNextEcosystemItem, 5000);
+  setInterval(showNextEcosystemItem, 4000);
 }
