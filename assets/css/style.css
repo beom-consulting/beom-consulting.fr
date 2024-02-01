@@ -273,11 +273,10 @@ header {
   background-color: var(--ocher-500);
   bottom: 0;
   color: var(--petrol-blue-500);
-  height: 243px;
   position: absolute;
   right: 0;
   transform: translate(40%, 60%);
-  width: 257px;
+  width: 228px;
   padding: 1.5rem;
 }
 
@@ -490,6 +489,21 @@ header {
 
 .ecosystem__grid__item--active {
   display: flex !important;
+}
+
+.ecosystem__grid__item-logos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.ecosystem__grid__item img {
+  transition: 0.2s ease-in-out;
+}
+
+.ecosystem__grid__item img:hover {
+  transform: scale(1.1);
 }
 
 .ecosystem__grid__item span {
