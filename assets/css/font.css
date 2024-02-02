@@ -6,12 +6,6 @@
 }
 
 @font-face {
-  font-family: "Ubuntu BoldItalic";
-  src: url("../font/Ubuntu/Ubuntu-BoldItalic.ttf");
-  font-display: swap;
-}
-
-@font-face {
   font-family: "Ubuntu Italic";
   src: url("../font/Ubuntu/Ubuntu-Italic.ttf");
   font-display: swap;
@@ -24,20 +18,8 @@
 }
 
 @font-face {
-  font-family: "Ubuntu LightItalic";
-  src: url("../font/Ubuntu/Ubuntu-LightItalic.ttf");
-  font-display: swap;
-}
-
-@font-face {
   font-family: "Ubuntu Medium";
   src: url("../font/Ubuntu/Ubuntu-Medium.ttf");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Ubuntu MediumItalic";
-  src: url("../font/Ubuntu/Ubuntu-MediumItalic.ttf");
   font-display: swap;
 }
 
