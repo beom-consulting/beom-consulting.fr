@@ -134,10 +134,10 @@ header {
   }
 
   .navbar__links a {
-    font-weight: 500;
     font-size: 1.75rem;
+    font-weight: 300;
+    line-height: 2.1rem;
     letter-spacing: 0.2625rem;
-    font-family: "Ubuntu Light";
   }
 }
 
@@ -167,7 +167,6 @@ header {
 }
 
 .home__container__text h1 {
-  font-family: "Philosopher";
   color: var(--ocher-100);
 }
 
@@ -218,7 +217,6 @@ header {
 }
 
 .vision__text > .citation {
-  font-family: "Philosopher";
   padding-bottom: 4rem;
   color: var(--petrol-blue-500);
 }
@@ -268,7 +266,6 @@ header {
   background-color: var(--petrol-blue-opacity-80);
   color: var(--ocher-500);
   text-shadow: var(--text-shadow);
-  font-family: "Philosopher";
   height: 100%;
   padding: 1.25rem;
   position: relative;
@@ -284,10 +281,6 @@ header {
   transform: translate(40%, 60%);
   width: 228px;
   padding: 1.5rem;
-}
-
-.vision__frame__front .large-body-accent {
-  font-family: "Ubuntu";
 }
 
 .vision__frame__front img {
@@ -399,7 +392,6 @@ header {
 }
 
 .expertise__grid__item h3 {
-  font-family: "Philosopher";
   color: var(--ocher-100);
   padding-bottom: 0.75rem;
 }
@@ -436,12 +428,10 @@ header {
 }
 
 .adn__container__item h3 {
-  font-family: "Philosopher";
   color: var(--petrol-blue-500);
 }
 
 .adn__container__item p {
-  font-family: "Ubuntu";
   color: var(--petrol-blue-500);
   max-width: 675px;
 }
@@ -579,7 +569,6 @@ header {
 
 .footer__container__contact h3 {
   color: var(--petrol-blue-500);
-  font-family: "Philosopher";
 }
 
 .footer__container__contact img:last-child {
