@@ -139,6 +139,11 @@ header {
     line-height: 2.1rem;
     letter-spacing: 0.2625rem;
   }
+
+  .button {
+    font-size: 1.625rem;
+    line-height: 1.95rem;
+  }
 }
 
 .home {
