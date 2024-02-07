@@ -9,7 +9,7 @@ const header = document.querySelector("header");
 const contactBtn = document.querySelector("#contact-btn");
 const menuIcon = document.querySelector("#navbar-burger-icon");
 
-let isSectionHome = true;
+let isSectionHome = false;
 
 function changeNavState() {
   if (window.scrollY < 50) {
