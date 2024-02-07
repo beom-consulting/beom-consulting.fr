@@ -22,6 +22,8 @@ function changeNavState() {
   }
 }
 
+changeNavState();
+
 window.addEventListener("scroll", changeNavState);
 
 const linksObserver = new IntersectionObserver(
