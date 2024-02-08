@@ -7,15 +7,16 @@ const sliderIndicators = document.querySelectorAll(
 let expertiseIndex = 0;
 
 function showExpertiseItem(index) {
-  expertiseItems.forEach((item) => {
-    item.classList.remove("expertise__grid__item--active");
+  sliderIndicators.forEach((indicator) =>
+    indicator.classList.remove("slider__indicators-item--active")
+  );
+
+  expertiseItems[index].scrollIntoView({
+    behavior: "smooth",
+    block: "nearest",
+    inline: "center",
   });
 
-  sliderIndicators.forEach((indicator) => {
-    indicator.classList.remove("slider__indicators-item--active");
-  });
-
-  expertiseItems[index].classList.add("expertise__grid__item--active");
   sliderIndicators[index].classList.add("slider__indicators-item--active");
 }
 
@@ -31,7 +32,12 @@ function showPrevExpertiseItem() {
 }
 
 if (window.innerWidth < 640) {
-  showExpertiseItem(expertiseIndex);
+  expertiseItems.forEach((item) => {
+    item.removeAttribute("data-aos");
+  });
+  sliderIndicators[expertiseIndex].classList.add(
+    "slider__indicators-item--active"
+  );
 }
 
 // handle swipe events on expertise grid items

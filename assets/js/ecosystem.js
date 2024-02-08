@@ -17,6 +17,9 @@ function showNextEcosystemItem() {
 
 // change item every 5 seconds if mobile view
 if (window.innerWidth < 640) {
+  ecosytemItems.forEach((item) => {
+    item.removeAttribute("data-aos");
+  });
   showEcosystemItem(ecosystemIndex);
   setInterval(showNextEcosystemItem, 4000);
 }
