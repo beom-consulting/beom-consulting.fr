@@ -67,8 +67,19 @@ h2 {
   line-height: 1.5rem;
 }
 
+section {
+  min-height: 100vh;
+  display: flex;
+  padding-block: 6rem;
+  flex-direction: row;
+  align-items: center;
+  scroll-snap-stop: always;
+  scroll-snap-align: start;
+}
+
 .container {
   max-width: 1106px;
+  width: 100%;
   margin: 0 auto;
   padding-inline: 1.5rem;
 }

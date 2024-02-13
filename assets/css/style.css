@@ -148,12 +148,6 @@ header {
 
 .home {
   background-color: #182332;
-}
-
-.home__container {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
   min-height: calc(100vh - var(--home-icon-size));
   background-image: url("../img/home-bg.webp");
   background-position: center;
@@ -168,7 +162,6 @@ header {
   gap: 1.25rem;
   align-items: center;
   text-align: center;
-  padding-block: 8rem;
 }
 
 .home__container__text h1 {
@@ -185,7 +178,7 @@ header {
 }
 
 @media (max-width: 1024px) {
-  .home__container {
+  .home {
     background-attachment: scroll;
   }
 }
@@ -365,7 +358,6 @@ header {
 
 .expertise {
   background-color: var(--petrol-blue-500);
-  padding-block: 6rem;
 }
 
 .expertise__grid {
@@ -428,7 +420,6 @@ header {
 
 .adn {
   background-color: var(--ocher-100);
-  padding-block: 6rem;
 }
 
 .adn__container {
@@ -470,20 +461,10 @@ header {
   text-shadow: var(--text-shadow);
 }
 
-.ecosystem__container {
-  align-items: center;
-  background-color: var(--petrol-blue-opacity-50);
-  display: flex;
-  height: 100%;
-  justify-content: center;
-  opacity: 0.85;
-  text-align: center;
-  padding-block: 6rem;
-}
-
 .ecosystem__container__text {
   color: var(--white);
   padding-bottom: 5rem;
+  text-align: center;
 }
 
 .ecosystem__grid {
@@ -578,6 +559,8 @@ header {
 
 .contact {
   background-color: var(--ocher-100);
+  min-height: calc(100vh - 54px);
+  padding-block: 2rem;
 }
 
 .contact__container {
@@ -585,7 +568,6 @@ header {
   flex-direction: column;
   gap: 6rem;
   align-items: center;
-  padding-block: 11rem;
 }
 
 .contact__container__texts {
@@ -617,11 +599,22 @@ header {
   gap: 0.75rem;
 }
 
+.contact__container__position h2 {
+  padding-bottom: 0;
+  color: var(--petrol-blue-500);
+}
+
+@media (max-width: 640px) {
+  .contact {
+    min-height: calc(100vh - 98px);
+  }
+}
+
 footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.75rem 1.25rem;
+  padding: 0.75rem 2rem;
   background-color: var(--petrol-blue-500);
   color: var(--ocher-100);
 }

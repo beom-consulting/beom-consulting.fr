@@ -1,3 +1,9 @@
+section {
+  display: block;
+  min-height: auto;
+  padding-block: 0;
+}
+
 .mentions__header {
   background-image: url("../img/home-bg.webp");
   background-size: cover;
