@@ -74,13 +74,25 @@ navLinks.forEach((link) => {
   link.addEventListener("click", toggleMobileNav);
 });
 
-function openClosePopIn(index) {
+function openClosePopIn(event, index) {
   const popin = document.getElementById('offer-' + index);
   popin?.classList.toggle('active');
   document.body.classList.toggle('no-scroll');
+  event.stopPropagation();
 }
 
-document.querySelectorAll('.offer-popin').forEach((element, index) => {
-  element.addEventListener('click', _ => openClosePopIn(index + 1));
-  element.firstElementChild.addEventListener('click', event => event.stopPropagation());
-});
+var mql = window.matchMedia("(hover: hover)");
+
+if (mql.matches) {
+  document.querySelectorAll('.offer-popin').forEach((element, index) => {
+    element.addEventListener('click', event => openClosePopIn(event, index + 1));
+    element.firstElementChild.addEventListener('click', event => event.stopPropagation());
+  });
+} else {
+  document.querySelectorAll('.offers__grid__item').forEach((element, index) => {
+    element.addEventListener('click', event => openClosePopIn(event, index + 1));
+  });
+  document.querySelectorAll('.offer-popin').forEach((element, index) => {
+    element.addEventListener('click', event => openClosePopIn(event, index + 1));
+  });
+}

@@ -46,10 +46,6 @@ header {
   letter-spacing: 0.125rem;
 }
 
-.navbar__links a:hover {
-  font-weight: 700;
-}
-
 .navbar__links-text--active {
   font-weight: 700 !important;
 }
@@ -60,11 +56,6 @@ header {
   border: 1px solid var(--ocher-500);
   color: var(--ocher-500);
   padding: 0.5rem 1rem;
-}
-
-.navbar-contact:hover {
-  background-color: var(--ocher-500);
-  color: var(--ocher-100);
 }
 
 .navbar-icon {
@@ -395,6 +386,20 @@ header {
   border-color: var(--garnet);
 }
 
+.offers__grid__item button {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--ocher-500);
+}
+
 .offers__grid__item img {
   position: absolute;
   top: 0;
@@ -417,29 +422,6 @@ header {
 .offers__grid__item p span {
   display: block;
   color: var(--white);
-}
-
-.offers__grid__item button {
-  display: none;
-}
-
-.offers__grid__item:hover {
-  border-color: var(--ocher-500);
-}
-
-.offers__grid__item:hover button {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--petrol-blue-opacity-60);
-  font-size: 4rem;
-  font-weight: bold;
-  color: var(--ocher-500);
 }
 
 .offer-popin {
@@ -610,10 +592,6 @@ header {
   transition: 0.2s ease-in-out;
 }
 
-.ecosystem__grid__item img:hover {
-  transform: scale(1.1);
-}
-
 .ecosystem__grid__item span {
   width: 40px;
   height: 8px;
@@ -723,4 +701,44 @@ footer {
     gap: 0.75rem;
     padding-block: 1rem;
   }
+}
+
+@media (hover: hover) {
+
+  .navbar__links a:hover {
+    font-weight: 700;
+  }
+
+  .navbar-contact:hover {
+    background-color: var(--ocher-500);
+    color: var(--ocher-100);
+  }
+
+  .offers__grid__item:hover {
+    border-color: var(--ocher-500);
+  }
+
+  .offers__grid__item button {
+    display: none;
+  }
+
+  .offers__grid__item:hover button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--petrol-blue-opacity-60);
+    font-size: 4rem;
+    font-weight: bold;
+    color: var(--ocher-500);
+  }
+
+  .ecosystem__grid__item img:hover {
+    transform: scale(1.1);
+  }
+
 }
