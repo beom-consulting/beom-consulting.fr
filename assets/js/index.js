@@ -73,3 +73,14 @@ contactBtn.addEventListener("click", toggleMobileNav);
 navLinks.forEach((link) => {
   link.addEventListener("click", toggleMobileNav);
 });
+
+function openClosePopIn(index) {
+  const popin = document.getElementById('offer-' + index);
+  popin?.classList.toggle('active');
+  document.body.classList.toggle('no-scroll');
+}
+
+document.querySelectorAll('.offer-popin').forEach((element, index) => {
+  element.addEventListener('click', _ => openClosePopIn(index + 1));
+  element.firstElementChild.addEventListener('click', event => event.stopPropagation());
+});

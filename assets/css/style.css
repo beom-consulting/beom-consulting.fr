@@ -1,10 +1,3 @@
-:root {
-	--cards: 3;
-	--cardHeight: 50rem;
-	--cardTopPadding: 1.5em;
-	--cardMargin: 4vw;
-}
-
 header {
   position: fixed;
   left: 0;
@@ -363,109 +356,160 @@ header {
   }
 }
 
-.expertise {
+.offers {
   background-color: var(--petrol-blue-500);
 }
 
-#cards {
-	list-style: none;
-	padding-left: 0;
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: repeat(var(--cards), var(--cardHeight));
-	gap: var(--cardMargin);
-	padding-bottom: calc(var(--cards) * var(--cardTopPadding));
-	margin-bottom: var(--cardMargin);
+.offers__grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+  position: relative;
+  width: 100%;
+  min-height: 260px;
 }
 
-#card1 {
-	--index: 1;
+.offers__grid__item {
+  max-width: 320px;
+  width: 100%;
+  height: 320px;
+  padding: 2.5rem 1.25rem 1.25rem 1.25rem;
+  border: 3px solid var(--ocher-100);
+  border-radius: 3px;
+  position: relative;
+  text-shadow: var(--text-shadow);
+  color: var(--ocher-100);
+  text-align: left;
 }
 
-#card2 {
-	--index: 2;
+.offers__grid__item:nth-child(1) {
+  border-color: var(--eggplant);
 }
 
-#card3 {
-	--index: 3;
+.offers__grid__item:nth-child(2) {
+  border-color: var(--forest);
 }
 
-.card {
-	position: sticky;
-	top: 96px;
-	padding-top: calc(var(--index) * var(--cardTopPadding));
+.offers__grid__item:nth-child(3) {
+  border-color: var(--garnet);
 }
 
-.card-body {
+.offers__grid__item img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.offers__grid__item img:first-child {
+  padding: 0.25rem;
+  background-color: var(--petrol-blue-500);
+}
+
+.offers__grid__item h3 {
+  color: var(--ocher-100);
+  padding-bottom: 0.75rem;
+  text-align: center;
+}
+
+.offers__grid__item p span {
+  display: block;
+  color: var(--white);
+}
+
+.offers__grid__item button {
+  display: none;
+}
+
+.offers__grid__item:hover {
+  border-color: var(--ocher-500);
+}
+
+.offers__grid__item:hover button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--petrol-blue-opacity-60);
+  font-size: 4rem;
+  font-weight: bold;
+  color: var(--ocher-500);
+}
+
+.offer-popin {
+  display: none;
+}
+
+.offer-popin.active {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 200;
+  background-color: var(--petrol-blue-opacity-60);
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  overflow-y: auto;
+}
+
+.offer-body {
   position: relative;
   color: var(--petrol-blue-500);
 	box-sizing: border-box;
-	padding: 2rem;
+  border: 3px solid var(--ocher-100);
+  border-radius: 3px;
   background-color: var(--ocher-100);
-	box-shadow: 0 0 2rem 0 rgba(0,0,0,0.3);
-	height: var(--cardHeight);
 	transition: all 0.5s;
-  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
 }
 
-.card-body h3 {
-  color: var(--petrol-blue-500);
-  margin-bottom: 2rem;
-}
+ .offer-body h2 {
+  margin-top: 2rem;
+ }
 
-.card-body h4 {
-  margin: 1rem 0 .25rem;
-}
-
-.card-body ul {
-  list-style-type: disc;
-  margin-left: 1.5rem;
-}
-
-.card-body p + p {
-  margin-top: .5rem;
-}
-
-.card-body .tags {
+.offer-body h2 button {
   position: absolute;
-  text-align: right;
-  bottom: 1rem;
-  right: 2rem;
-  margin-left: 2rem;
+  right: .5rem;
+  top: .5rem;
+  height: auto;
+}
+
+.offer-body p ~ img,
+.offer-body ul ~ img {
+  margin-top: 2rem;
+}
+
+.offer-body ul {
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
+.offer-body p:last-child {
   font-size: 1.125rem;
   word-spacing: .5rem;
+  margin-bottom: 1rem;
 }
 
-#card3 ol {
+#offer-3 ol {
   font-size: 1.125rem;
+  padding: 0;
+  list-style-position: inside;
 }
 
-
-@media (max-width: 1024px) {
-  #cards {
-  	display: flex;
-    flex-direction: column;
-	  grid-template-columns: none;
-	  grid-template-rows: none;
-	  gap: unset;
-	  padding-bottom: 0;
-	  margin-bottom: 0;
-  }
-  .card {
-    position: static;
-    padding-top: 0;
-  }
-  .card + .card {
-    padding-top: 2rem;
-  }
-  .card-body {
-    border-radius: 0;
-    height: auto;
-  }
-  .card-body .tags {
-    display: block;
-    position: static;
-  }
+.no-scroll {
+  overflow: hidden;
 }
 
 .adn {
@@ -541,6 +585,10 @@ header {
   color: var(--ocher-100);
   flex: 33%;
   flex-grow: 0;
+}
+
+.ecosystem__grid__item:last-child {
+  padding-top: 4rem;
 }
 
 .ecosystem__grid__item--active {

@@ -94,28 +94,7 @@ section {
   overflow: hidden;
 }
 
-.slider__indicators {
-  display: none;
-  align-items: center;
-  justify-content: center;
-  padding-top: 1.5rem;
-  gap: 0.5rem;
-}
-
-.slider__indicators-item {
-  width: 8px;
-  height: 8px;
-  background-color: var(--ocher-100);
-}
-
-.slider__indicators-item--active {
-  background-color: var(--ocher-500);
-}
-
 @media (max-width: 640px) {
-  .slider__indicators {
-    display: flex;
-  }
 
   html {
     scroll-behavior: auto;
